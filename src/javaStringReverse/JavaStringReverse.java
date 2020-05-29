@@ -1,21 +1,23 @@
 package javaStringReverse;
+
 import java.util.*;
+
 public class JavaStringReverse {
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Scanner sc = new Scanner(System.in);
         String A = sc.next();
         String reverse = "";
         for (int i = A.length() - 1; i >= 0; i--) {
-        	reverse += A.charAt(i);
+            reverse += A.charAt(i);
         }
         if (reverse.equals(A)) {
-        	System.out.println("Yes");
+            System.out.println("Yes");
         } else {
-        	System.out.println("No");
+            System.out.println("No");
         }
         sc.close();
-	}
+    }
 
 }

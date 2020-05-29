@@ -1,10 +1,13 @@
 package javaIfElse;
+
 import java.util.*;
+
 public class javaIfElse {
-	private static final Scanner scanner = new Scanner(System.in);
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int N = scanner.nextInt();
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        int N = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
         if (N % 2 == 1 && 1 <= N && N <= 100) {
             System.out.println("Weird");
@@ -16,6 +19,6 @@ public class javaIfElse {
             System.out.println("Not Weird");
         }
         scanner.close();
-	}
+    }
 
 }
